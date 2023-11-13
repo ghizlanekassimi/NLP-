@@ -1,0 +1,62 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - monnom
+  - get_quote
+  - get_idea
+  - blague
+
+slots:
+  lenom:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: thename
+
+entities:
+  - thename
+
+
+responses:
+  utter_greet:
+  - text: "Hey! so happy to see you here friend , can you tell me what's your name ? "
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_monnom:
+  - text: "nice name ! {lenom}"
+  utter_get_quote:
+  - text: "'The only way to do great work is to love what you do.' - Steve Jobs"
+  - text: "'In the middle of every difficulty lies opportunity.' - Albert Einstein"
+  utter_get_idea:
+  - text: "Regular Posting: Consistency is key. Post inspirational quotes regularly, whether it's daily, weekly, or any other schedule you commit to"
+  - text: "Content Collection: Start by collecting a variety of inspirational quotes. You can find them in books, websites, or create your own"
+
+  utter_blague:
+  - text: "Did you hear about the mathematician who's afraid of negative numbers?
+He'll stop at nothing to avoid them."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

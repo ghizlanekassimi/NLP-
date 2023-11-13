@@ -1,0 +1,142 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - salam
+    - salut
+    - slt
+    - bnjr
+    - bonjour
+    - bonsoir
+    - hi
+    - cc
+    - hellooo
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+  #mon nom intent
+- intent: monnom
+  examples: |
+    - my name is [ghizlane](thename)
+  #get quote intent
+- intent: get_quote
+  examples: |
+    - Donne-moi une citation
+    - Citation inspirante
+    - Besoin d'une citation
+    - I want a quote
+    - Can you give me a quote
+    - etini chi quote
+    - bghit a quote
+
+# get Idea intent
+- intent: get_idea
+  examples: |
+    - Donne-moi une idée à faire à la maison
+    - Besoin d'une idée pour ce soir
+    - Quoi faire aujourd'hui à la maison
+    - give me an idea for the day
+    - an idea please
+    - the idea of the day
+    - etini an idea
+    - etini chi fikra
+    - fikra afak
+    - an idea afek
+
+  # get a joke intent
+
+- intent: blague
+  examples: |
+    - Raconte une blague
+    - Dis-moi une blague
+    - Une petite blague
+    - give me a joke 
+    - a joke please
+    - i want a joke
+    - une autre blague svp
+    - je veux une autre blague
+    - give me a another joke

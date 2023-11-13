@@ -1,0 +1,51 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+# My story for testing
+- story: using slots and entites
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: monnom
+      entities:
+      - thename: "ghizlane"
+    #- slot_was_set:
+     # - namee: "hhu"
+    - action: utter_monnom
+    - intent: get_quote
+    - action: utter_get_quote
+    - intent: get_idea
+    - action: utter_get_idea
+    - intent: blague
+    - action: utter_blague
+    - action: utter_did_that_help
+    - intent: affirm
+    - action: utter_happy
